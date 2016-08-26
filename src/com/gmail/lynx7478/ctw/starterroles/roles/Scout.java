@@ -83,7 +83,6 @@ public class Scout extends Role implements Listener {
 
 	@Override
 	public void onSpecialItemClick(Player arg0, ItemStack arg1) {
-		//TODO: Scout pull thing.
 		return;
 		
 	}
