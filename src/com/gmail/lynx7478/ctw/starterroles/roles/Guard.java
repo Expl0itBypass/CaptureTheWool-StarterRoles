@@ -12,6 +12,7 @@ import com.gmail.lynx7478.ctw.game.CTWPlayer;
 import com.gmail.lynx7478.ctw.game.roles.Loadout;
 import com.gmail.lynx7478.ctw.game.roles.Role;
 import com.gmail.lynx7478.ctw.utils.ItemUtils;
+import com.gmail.lynx7478.ctw.utils.VersionUtils;
 
 import net.md_5.bungee.api.ChatColor;
 
@@ -62,7 +63,14 @@ public class Guard extends Role {
 		CTWPlayer p = CTWPlayer.getCTWPlayer(bP.getUniqueId());
 		for(CTWPlayer t : p.getTeam().getPlayers())
 		{
-			t.getPlayer().playSound(t.getPlayer().getLocation(), Sound.NOTE_PLING, 1F, 10F);
+			if(VersionUtils.getVersion().contains("v1_9") || VersionUtils.getVersion().contains("1_10"))
+			{
+				t.getPlayer().playSound(t.getPlayer().getLocation(), Sound.BLOCK_NOTE_PLING, 1F, 10F);
+			}else
+			{
+				//TODO: 1.7/1.8 sound.
+//				t.getPlayer().playSound(t.getPlayer().getLocation(), (Sound) Enum.valueOf(Class.forName("org.bukkit.Sound"), "NOTE_PLING"), 1F, 10F);
+			}
 		}
 	}
 
