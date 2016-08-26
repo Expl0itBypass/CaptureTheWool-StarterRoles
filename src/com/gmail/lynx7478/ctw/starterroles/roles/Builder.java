@@ -62,4 +62,9 @@ public class Builder extends Role {
 		
 	}
 
+	@Override
+	public int getLimitPerTeam() {
+		return 2;
+	}
+
 }

@@ -54,4 +54,9 @@ public class Tank extends Role {
 		
 	}
 
+	@Override
+	public int getLimitPerTeam() {
+		return 4;
+	}
+
 }

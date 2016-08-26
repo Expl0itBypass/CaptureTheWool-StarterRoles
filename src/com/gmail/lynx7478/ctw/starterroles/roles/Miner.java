@@ -54,4 +54,9 @@ public class Miner extends Role {
 		
 	}
 
+	@Override
+	public int getLimitPerTeam() {
+		return 2;
+	}
+
 }

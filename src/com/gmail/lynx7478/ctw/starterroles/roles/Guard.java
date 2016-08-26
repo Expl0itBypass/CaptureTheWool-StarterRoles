@@ -65,4 +65,9 @@ public class Guard extends Role {
 			t.getPlayer().playSound(t.getPlayer().getLocation(), Sound.NOTE_PLING, 1F, 10F);
 		}
 	}
+
+	@Override
+	public int getLimitPerTeam() {
+		return 1;
+	}
 }

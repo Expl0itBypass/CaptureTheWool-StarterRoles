@@ -170,4 +170,9 @@ public class Scout extends Role implements Listener {
 		return false;
 	}
 
+	@Override
+	public int getLimitPerTeam() {
+		return 2;
+	}
+
 }

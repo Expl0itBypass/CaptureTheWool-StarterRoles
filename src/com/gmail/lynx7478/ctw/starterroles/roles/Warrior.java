@@ -52,4 +52,9 @@ public class Warrior extends Role {
 		
 	}
 
+	@Override
+	public int getLimitPerTeam() {
+		return 5;
+	}
+
 }
