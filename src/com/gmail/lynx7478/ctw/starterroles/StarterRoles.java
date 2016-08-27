@@ -17,6 +17,8 @@ public class StarterRoles extends JavaPlugin {
 		RoleManager.registerRole(new Scout());
 		RoleManager.registerRole(new Tank());
 		RoleManager.registerRole(new Warrior());
+		// The bird role can only be used on 1.9 and above because of the elytra.
+		//TODO: Make a 1.7 verison of the bird.
 		if(VersionUtils.getVersion().contains("v1_9") || VersionUtils.getVersion().contains("v1_10"))
 		{
 			RoleManager.registerRole(new Bird());
