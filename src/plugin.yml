@@ -3,4 +3,3 @@ main: com.gmail.lynx7478.ctw.starterroles.StarterRoles
 author: SKA4
 version: 1.0
 description: Starter roles for Capture the Wool.
-loadbefore: [CaptureTheWool]
